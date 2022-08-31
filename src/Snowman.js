@@ -59,6 +59,11 @@ function Snowman({
     setNWrong(n => n + (answer.includes(ltr) ? 0 : 1));
   }
 
+  const showButtons = nWrong < maxWrong ? true : false;
+
+  // check nWrong to maxWrong, return
+  // set property of button visibility depending on nWrong vs maxWrong
+
   /** generateButtons: return array of letter buttons to render */
   function generateButtons() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map(ltr => (
@@ -67,6 +72,7 @@ function Snowman({
             value={ltr}
             onClick={handleGuess}
             disabled={guessedLetters.has(ltr)}
+            // visibility={ nWrong >= maxWrong ? "hidden" : ""}
         >
           {ltr}
         </button>
@@ -76,8 +82,14 @@ function Snowman({
   return (
       <div className="Snowman">
         <img src={(images)[nWrong]} alt={nWrong} />
+        <p> Number wrong: { nWrong } </p>
         <p className="Snowman-word">{guessedWord()}</p>
-        <p>{generateButtons()}</p>
+        { showButtons &&
+          <p>{generateButtons()}</p>
+        }
+        { !showButtons &&
+          <p> "You lose, the word is 'test'" </p>
+        }
       </div>
   );
 }
