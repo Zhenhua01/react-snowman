@@ -63,9 +63,6 @@ function Snowman({
 
   const showButtons = nWrong < maxWrong ? true : false;
 
-  // check nWrong to maxWrong, return
-  // set property of button visibility depending on nWrong vs maxWrong
-
   /** generateButtons: return array of letter buttons to render */
   function generateButtons() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map(ltr => (
@@ -81,6 +78,7 @@ function Snowman({
     ));
   }
 
+  /** handleRestart: restarts game by resetting states on button click */
   function handleRestart() {
     setNWrong(0);
     setGuessedLetters(() => new Set());
@@ -96,12 +94,13 @@ function Snowman({
         <p>{generateButtons()}</p>
       }
       {!showButtons &&
-        <p>You lose, the word is '{answer}''</p>
+        <p>You lose, the word is '{answer}'</p>
       }
 
       <button
         value='restart'
-        onClick={handleRestart}>Restart!
+        onClick={handleRestart}>
+        Restart!
       </button>
     </div>
   );
