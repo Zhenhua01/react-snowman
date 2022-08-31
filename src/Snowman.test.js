@@ -9,6 +9,7 @@ describe("snapshot tests for stability", function () {
   });
 });
 
+// update button count
 
 describe("game playing works", function () {
   it("removes display and shows you lose message", function () {
@@ -16,12 +17,12 @@ describe("game playing works", function () {
     debug(container);
     fireEvent.click(container.querySelector("button[value='a']"));
 
-    expect(container.querySelectorAll("button").length).toEqual(26);
+    expect(container.querySelectorAll("button[class='ltrButton']").length).toEqual(26);
 
     fireEvent.click(container.querySelector("button[value='b']"));
 
     expect(
-      container.querySelector("button")
+      container.querySelector("button[class='ltrButton']")
     ).not.toBeInTheDocument();
 
     expect(container.querySelector(".Snowman")).toContainHTML("You lose, the word is 'test'");

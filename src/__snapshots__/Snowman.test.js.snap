@@ -22,139 +22,171 @@ exports[`snapshot tests for stability matches initial 1`] = `
       _
       _
       _
+      _
     </p>
     <p>
       <button
+        class="ltrButton"
         value="a"
       >
         a
       </button>
       <button
+        class="ltrButton"
         value="b"
       >
         b
       </button>
       <button
+        class="ltrButton"
         value="c"
       >
         c
       </button>
       <button
+        class="ltrButton"
         value="d"
       >
         d
       </button>
       <button
+        class="ltrButton"
         value="e"
       >
         e
       </button>
       <button
+        class="ltrButton"
         value="f"
       >
         f
       </button>
       <button
+        class="ltrButton"
         value="g"
       >
         g
       </button>
       <button
+        class="ltrButton"
         value="h"
       >
         h
       </button>
       <button
+        class="ltrButton"
         value="i"
       >
         i
       </button>
       <button
+        class="ltrButton"
         value="j"
       >
         j
       </button>
       <button
+        class="ltrButton"
         value="k"
       >
         k
       </button>
       <button
+        class="ltrButton"
         value="l"
       >
         l
       </button>
       <button
+        class="ltrButton"
         value="m"
       >
         m
       </button>
       <button
+        class="ltrButton"
         value="n"
       >
         n
       </button>
       <button
+        class="ltrButton"
         value="o"
       >
         o
       </button>
       <button
+        class="ltrButton"
         value="p"
       >
         p
       </button>
       <button
+        class="ltrButton"
         value="q"
       >
         q
       </button>
       <button
+        class="ltrButton"
         value="r"
       >
         r
       </button>
       <button
+        class="ltrButton"
         value="s"
       >
         s
       </button>
       <button
+        class="ltrButton"
         value="t"
       >
         t
       </button>
       <button
+        class="ltrButton"
         value="u"
       >
         u
       </button>
       <button
+        class="ltrButton"
         value="v"
       >
         v
       </button>
       <button
+        class="ltrButton"
         value="w"
       >
         w
       </button>
       <button
+        class="ltrButton"
         value="x"
       >
         x
       </button>
       <button
+        class="ltrButton"
         value="y"
       >
         y
       </button>
       <button
+        class="ltrButton"
         value="z"
       >
         z
       </button>
     </p>
+    <button
+      value="restart"
+    >
+      Restart!
+    </button>
   </div>
 </div>
 `;
